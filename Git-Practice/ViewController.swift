@@ -10,7 +10,7 @@ import UIKit
 class ViewController: UIViewController {
     private let titleLabel: UILabel = {
         let label = UILabel()
-        label.text = "깃충돌진짜사건"
+        label.text = "깃충돌진짜사건 🚨🚨🚨"
         label.font = .systemFont(ofSize: 20, weight: .semibold)
         return label
     }()
