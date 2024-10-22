@@ -22,6 +22,14 @@ class ViewController: UIViewController {
         return label
     }()
     
+    private let nextButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("다음", for: .normal)
+        button.backgroundColor = .tintColor
+        button.setTitleColor(.white, for: .normal)
+        return button
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setStyle()
@@ -34,7 +42,7 @@ class ViewController: UIViewController {
     }
     
     private func setUI() {
-        [titleLabel, subtitleLabel].forEach {
+        [titleLabel, subtitleLabel, nextButton].forEach {
               $0.translatesAutoresizingMaskIntoConstraints = false
               self.view.addSubview($0)
             }
@@ -45,7 +53,11 @@ class ViewController: UIViewController {
             titleLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
             titleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             subtitleLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 60),
-            subtitleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+            subtitleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            nextButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -60),
+            nextButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            nextButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            nextButton.heightAnchor.constraint(equalToConstant: 52)
         ])
     }
 }
