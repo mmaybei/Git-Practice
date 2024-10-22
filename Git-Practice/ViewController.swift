@@ -10,14 +10,14 @@ import UIKit
 class ViewController: UIViewController {
     private let titleLabel: UILabel = {
         let label = UILabel()
-        label.text = "깃충돌진짜사건 🚨🚨🚨"
+        label.text = "깃충돌가짜가짜사건"
         label.font = .systemFont(ofSize: 20, weight: .semibold)
         return label
     }()
     
     private let subtitleLabel: UILabel = {
         let label = UILabel()
-        label.text = "나도 깃 충돌 해결할 줄 몰라 하암 .."
+        label.text = "이제 깃충돌은 더이상 없으셈!"
         label.font = .systemFont(ofSize: 16, weight: .regular)
         return label
     }()
