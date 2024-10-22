@@ -66,10 +66,7 @@
 		A3CC502D2CC816DA00BC49F6 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				A3CC50182CC804D300BC49F6 /* Main.storyboard */,
-				A3CC501B2CC804D600BC49F6 /* Assets.xcassets */,
-				A3CC501D2CC804D600BC49F6 /* LaunchScreen.storyboard */,
-				A3CC50202CC804D600BC49F6 /* Info.plist */,
+				A3CC50162CC804D300BC49F6 /* ViewController.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -77,7 +74,10 @@
 		A3CC502E2CC816E000BC49F6 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				A3CC50162CC804D300BC49F6 /* ViewController.swift */,
+				A3CC50182CC804D300BC49F6 /* Main.storyboard */,
+				A3CC501B2CC804D600BC49F6 /* Assets.xcassets */,
+				A3CC501D2CC804D600BC49F6 /* LaunchScreen.storyboard */,
+				A3CC50202CC804D600BC49F6 /* Info.plist */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
